@@ -20,6 +20,7 @@ function embedYoutube(url, autoplay, background) {
     };
     suffix = `&${Object.entries(suffixParams).map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join('&')}`;
   }
+  
   let vid = usp.get('v') ? encodeURIComponent(usp.get('v')) : '';
   const embed = url.pathname;
   if (url.origin.includes('youtu.be')) {

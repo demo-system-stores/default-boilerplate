@@ -82,7 +82,6 @@ function renderImage(product, size = 250) {
 
   const createUrlForWidth = (url, w, format) => {
     const newUrl = new URL(url, window.location);
-
     // replace spaces with dashes
     const seoName = name.replace(' ', '-');
     newUrl.pathname = `${newUrl.pathname}/${assetId}/as/${seoName}.${format}`;

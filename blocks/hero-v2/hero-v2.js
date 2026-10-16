@@ -22,7 +22,6 @@ export default function decorate(block) {
         herobody.append(child);
       }
     }
-
     // Append heroimage and herobody (picture first, then all rest) to herocontent
     herocontent.append(heroimage);
     herocontent.append(herobody);

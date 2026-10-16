@@ -30,7 +30,6 @@ export async function performCatalogServiceQuery(query, variables) {
   }
 
   const queryResponse = await response.json();
-
   return queryResponse.data;
 }
 
